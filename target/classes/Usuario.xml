@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Usuario>
+    <nombre>Juan Campos</nombre>
+    <direccion>Travesia de Lopez de Aranda 4, Madrid, España</direccion>
+    <telefono>+34 636 036 234</telefono>
+    <fax>+34 987 654 321</fax>
+    <email>juan.campos2@ceu.es</email>
+    <email>jmartin.campos90@gmail.com</email>
+    <idiomas>
+        <idioma>Español</idioma>
+        <idioma>Inglés</idioma>
+    </idiomas>
+</Usuario>
