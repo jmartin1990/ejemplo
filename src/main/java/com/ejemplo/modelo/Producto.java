@@ -1,7 +1,7 @@
 package com.ejemplo.modelo;
 
 public class Producto {
-    private int id;
+    private String referencia;  // Cambiado de int id a String referencia
     private String nombre;
     private String descripcion;
     private double precio;
@@ -10,14 +10,14 @@ public class Producto {
     public Producto() {}
 
     // Constructor con todos los parámetros
-    public Producto(int id, String nombre, String descripcion, double precio) {
-        this.id = id;
+    public Producto(String referencia, String nombre, String descripcion, double precio) {
+        this.referencia = referencia;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;
     }
 
-    // Constructor sin id
+    // Constructor sin referencia
     public Producto(String nombre, String descripcion, double precio) {
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -25,8 +25,8 @@ public class Producto {
     }
 
     // Getters y Setters
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
+    public String getReferencia() { return referencia; }
+    public void setReferencia(String referencia) { this.referencia = referencia; }
     public String getNombre() { return nombre; }
     public void setNombre(String nombre) { this.nombre = nombre; }
     public String getDescripcion() { return descripcion; }

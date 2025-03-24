@@ -3,7 +3,7 @@ package com.ejemplo.modelo;
 import java.time.LocalDate;
 
 public class Compra {
-    private int id;
+    private String codigo;  // Cambiado de int id a String codigo
     private String nombreCliente;
     private LocalDate fechaCompra;
     private double precioCompra;
@@ -13,15 +13,15 @@ public class Compra {
     public Compra() {}
 
     // Constructor con todos los parámetros
-    public Compra(int id, String nombreCliente, LocalDate fechaCompra, double precioCompra, boolean pagoTarjeta) {
-        this.id = id;
+    public Compra(String codigo, String nombreCliente, LocalDate fechaCompra, double precioCompra, boolean pagoTarjeta) {
+        this.codigo = codigo;
         this.nombreCliente = nombreCliente;
         this.fechaCompra = fechaCompra;
         this.precioCompra = precioCompra;
         this.pagoTarjeta = pagoTarjeta;
     }
 
-    // Constructor sin id
+    // Constructor sin codigo
     public Compra(String nombreCliente, LocalDate fechaCompra, double precioCompra, boolean pagoTarjeta) {
         this.nombreCliente = nombreCliente;
         this.fechaCompra = fechaCompra;
@@ -30,8 +30,8 @@ public class Compra {
     }
 
     // Getters y Setters
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
+    public String getCodigo() { return codigo; }
+    public void setCodigo(String codigo) { this.codigo = codigo; }
     public String getNombreCliente() { return nombreCliente; }
     public void setNombreCliente(String nombreCliente) { this.nombreCliente = nombreCliente; }
     public LocalDate getFechaCompra() { return fechaCompra; }
